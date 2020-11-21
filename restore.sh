@@ -454,7 +454,7 @@ function InstallDependencies {
         Compile libimobiledevice ifuse
         sudo ln -sf /usr/lib/libzip.so.5 /usr/lib/libzip.so.4
         
-    elif [[ $VERSION_ID == "20.10" ]]; then
+    elif [[ $VERSION_ID == "20.04" ]]; then
         # Ubuntu Focal
         sudo apt update
         sudo apt -y install autoconf automake binutils bsdiff build-essential checkinstall curl git ifuse libimobiledevice-utils libplist3 libreadline-dev libtool-bin libusb-1.0-0-dev libusbmuxd6 libzip5 python2 usbmuxd
