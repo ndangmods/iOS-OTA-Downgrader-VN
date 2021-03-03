@@ -377,6 +377,8 @@ function Downgrade {
         fi
         Log "Đang vào chế độ PWNREC..."
         sudo LD_LIBRARY_PATH=/usr/local/lib irecovery -f $iBSS.im4p
+        sudo LD_LIBRARY_PATH=/usr/local/lib irecovery -f $iBSS.im4p
+        sudo LD_LIBRARY_PATH=/usr/local/lib irecovery -f $iBEC.im4p
         sudo LD_LIBRARY_PATH=/usr/local/lib irecovery -f $iBEC.im4p
         sleep 5
         RecoveryDevice=$(lsusb | grep -c '1281')
